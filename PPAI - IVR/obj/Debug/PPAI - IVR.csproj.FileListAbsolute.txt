@@ -1,0 +1,11 @@
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\bin\Debug\PPAI - IVR.exe.config
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\bin\Debug\PPAI - IVR.exe
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\bin\Debug\PPAI - IVR.pdb
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.csproj.AssemblyReference.cache
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.csproj.SuggestedBindingRedirects.cache
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI___IVR.RespuestaOperador.resources
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI___IVR.Properties.Resources.resources
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.csproj.GenerateResource.cache
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.csproj.CoreCompileInputs.cache
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.exe
+D:\documentos\UTN Adriel Coria Oficial\UTN-FRC - 2023\3ro (Tercero)\Diseño de Sistemas de Información (Integradora)\PPAI\Entrega 01\PPAI - IVR\PPAI - IVR\obj\Debug\PPAI - IVR.pdb
