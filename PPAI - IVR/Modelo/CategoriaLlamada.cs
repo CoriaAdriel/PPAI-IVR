@@ -13,6 +13,13 @@ namespace PPAI___IVR.Modelo
         private string nombre;
         private int nroOrden;
 
+        /// <summary>
+        /// Constructor de la clase actual.
+        /// </summary>
+        /// <param name="audioMensajeOpciones"></param>
+        /// <param name="mensajeOpciones"></param>
+        /// <param name="nombre"></param>
+        /// <param name="nroOrden"></param>
         public CategoriaLlamada(string audioMensajeOpciones, string mensajeOpciones, string nombre, int nroOrden)
         {
             this.AudioMensajeOpciones = audioMensajeOpciones;
@@ -20,7 +27,8 @@ namespace PPAI___IVR.Modelo
             this.Nombre = nombre;
             this.NroOrden = nroOrden;
         }
-
+        
+        // Métodos set y get de la clase.
         public string AudioMensajeOpciones { get => audioMensajeOpciones; set => audioMensajeOpciones = value; }
         public string MensajeOpciones { get => mensajeOpciones; set => mensajeOpciones = value; }
         public string Nombre { get => nombre; set => nombre = value; }

@@ -10,11 +10,16 @@ namespace PPAI___IVR.Modelo
     {
         private string datoAValidar;
 
+        /// <summary>
+        /// Constructor de la clase actual
+        /// </summary>
+        /// <param name="datoAValidar"></param>
         public InformacionCliente(string datoAValidar)
         {
             this.DatoAValidar = datoAValidar;
         }
 
+        // Métodos set y get de la clase.
         public string DatoAValidar { get => datoAValidar; set => datoAValidar = value; }
     }
 }
