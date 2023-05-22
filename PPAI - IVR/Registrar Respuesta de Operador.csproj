@@ -60,6 +60,7 @@
       <DependentUpon>InterfazOperador.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\CambioEstado.cs" />
+    <Compile Include="Modelo\CasoDeUso28.cs" />
     <Compile Include="Modelo\CategoriaLlamada.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Estado.cs" />

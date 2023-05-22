@@ -47,5 +47,22 @@ namespace PPAI___IVR.Interfaz
         {
             gestorOperador.tomarOpcionValida();
         }
+
+        public void habilitarSeleccionRta() {
+        
+        }
+
+        public void tomarRespuesta() {
+            gestorOperador.tomarRespuesta();
+        }
+
+        public void solicitarConfirmacion() { 
+        
+        
+        }
+
+        public void confirmar() {
+            gestorOperador.tomarConfirmacion();
+        }
     }
 }

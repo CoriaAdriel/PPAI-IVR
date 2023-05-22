@@ -34,6 +34,7 @@ namespace PPAI___IVR.Modelo
         public int Dni { get => dni; set => dni = value; }
         public string NombreCompleto { get => nombreCompleto; set => nombreCompleto = value; }
         public int NroCelular { get => nroCelular; set => nroCelular = value; }
+        public InformacionCliente InformacionCliente { get => informacionCliente; set => informacionCliente = value; }
 
         public bool esCliente()
         {
@@ -45,7 +46,7 @@ namespace PPAI___IVR.Modelo
         }
         public bool esInfoCorrecta()
         {
-            return false;
+            return informacionCliente.esInformacionCorrecta();
         }
 
 

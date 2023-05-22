@@ -11,7 +11,7 @@ namespace PPAI___IVR.Modelo
     {
         private string descripcionOperador;
         private string detalleAccionRequerida;
-        private int duracion;
+        private TimeSpan duracion;
         private string encuestaEnviada;
         private string observacionAuditor;
         private List<CambioEstado> cambioEstados;
@@ -25,7 +25,7 @@ namespace PPAI___IVR.Modelo
         /// <param name="duracion"></param>
         /// <param name="encuestaEnviada"></param>
         /// <param name="observacionAuditor"></param>
-        public Llamada(string descripcionOperador, string detalleAccionRequerida, int duracion, string encuestaEnviada, string observacionAuditor)
+        public Llamada(string descripcionOperador, string detalleAccionRequerida, TimeSpan duracion, string encuestaEnviada, string observacionAuditor)
         {
             this.descripcionOperador = descripcionOperador;
             this.detalleAccionRequerida = detalleAccionRequerida;
@@ -48,7 +48,7 @@ namespace PPAI___IVR.Modelo
             get { return detalleAccionRequerida; }
             set { detalleAccionRequerida = value; }
         }
-        public int Duracion
+        public TimeSpan Duracion
         {
             get { return duracion; }
             set { duracion = value; }
@@ -93,6 +93,25 @@ namespace PPAI___IVR.Modelo
         }
         public void validarInfoCliente()
         {
+            cliente.esInfoCorrecta();
+        }
+
+        public bool sosFinalizada()
+        {
+            foreach (CambioEstado item in cambioEstados)
+            {
+                if (item.sosActual())
+                {
+                    return item.Estado.Nombre == "Finalizada";
+                     
+                }
+            }
+            return false;
+        }
+
+        public void finalizar() {
+            Estado estado = new Estado("Finalizada");
+            setEstado(estado);
 
         }
     }

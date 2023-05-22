@@ -3,6 +3,7 @@ using PPAI___IVR.Modelo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace PPAI___IVR.Controlador
         private Cliente cliente;
         private InterfazIVR interfazIVR;
         private InterfazOperador interfazOperador;
+        private DateTime fechaHoraInicio;
 
         public GestorOperador(InterfazIVR interfazIVR, InterfazOperador interfazOperador)
         {
@@ -30,11 +32,13 @@ namespace PPAI___IVR.Controlador
         }
         public void nuevaRespuestaOperador(Llamada llamada, CategoriaLlamada categoriaLlamada)
         {
+
+            fechaHoraInicio = DateTime.Now;
             Estado estado = new Estado("En Curso");
             llamada.setEstado(estado);
             cliente = llamada.Cliente;
             categoriaLlamada.getValidaciones();
-            
+
         }
         public DateTime obtenerFechaYHoraActual()
         {
@@ -52,5 +56,31 @@ namespace PPAI___IVR.Controlador
         {
             llamada.validarInfoCliente();
         }
+
+        public void tomarRespuesta() {
+            interfazOperador.solicitarConfirmacion();
+        }
+
+        public void tomarConfirmacion() {
+
+            CasoDeUso28 Caso28 = new CasoDeUso28();
+            Caso28.iniciarCU28();
+            DateTime fechaHoraActual= obtenerFechaYHoraActual();
+
+            TimeSpan duracion = calcularDuracion();
+            llamada.Duracion = duracion;
+            llamada.finalizar();
+
+            finCU();
+        
+        }
+
+        private TimeSpan calcularDuracion() {
+            DateTime fechaHoraActual= obtenerFechaYHoraActual();
+            return fechaHoraActual - fechaHoraInicio;
+          
+        }
+
+        private void finCU() {}
     }
 }
