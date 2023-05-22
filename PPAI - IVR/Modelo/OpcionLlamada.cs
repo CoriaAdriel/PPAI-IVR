@@ -12,6 +12,7 @@ namespace PPAI___IVR.Modelo
         private string mensajeSubOpciones;
         private string nombre;
         private int nroOrden;
+        private SubOpcionLlamada SubOpcionLlamada;
 
         /// <summary>
         /// Constructor de la clase actual.
@@ -27,11 +28,19 @@ namespace PPAI___IVR.Modelo
             this.Nombre = nombre;
             this.NroOrden = nroOrden;
         }
+        public OpcionLlamada()
+        {
 
+        }
         // Métodos set y get de la clase.
         public string AudioMensajeSubOpciones { get => audioMensajeSubOpciones; set => audioMensajeSubOpciones = value; }
         public string MensajeSubOpciones { get => mensajeSubOpciones; set => mensajeSubOpciones = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public int NroOrden { get => nroOrden; set => nroOrden = value; }
+
+        public string getValidacion()
+        {
+            return SubOpcionLlamada.getValidacion();
+        }
     }
 }

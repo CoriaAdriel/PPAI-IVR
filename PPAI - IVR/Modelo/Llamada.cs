@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,8 @@ namespace PPAI___IVR.Modelo
         private int duracion;
         private string encuestaEnviada;
         private string observacionAuditor;
+        private List<CambioEstado> cambioEstados;
+        private Cliente cliente;
 
         /// <summary>
         /// Constructor de la clase Llamada.
@@ -30,7 +33,10 @@ namespace PPAI___IVR.Modelo
             this.encuestaEnviada = encuestaEnviada;
             this.observacionAuditor = observacionAuditor;
         }
+        public Llamada()
+        {
 
+        }
         // Métodos set y get de todos los atributos de la clase.
         public string DescripcionOperador
         {
@@ -56,6 +62,38 @@ namespace PPAI___IVR.Modelo
         {
             get { return observacionAuditor; }
             set { observacionAuditor = value; }
+        }
+
+        public Cliente Cliente { get => cliente; set => cliente = value; }
+
+        public List<CambioEstado> getListCambioEstado()
+        {
+            return this.cambioEstados;
+        }
+        public void setListCambioEstado(List<CambioEstado> lista)
+        {
+            this.cambioEstados = lista;
+        }
+        public void addCambioEstado(CambioEstado cambioEstado)
+        {
+            this.cambioEstados.Add(cambioEstado);
+        }
+        public void setEstado(Estado estado)
+        {
+            foreach (CambioEstado item in cambioEstados)
+            {
+                if(item.sosActual())
+                {
+                    item.FechaHoraFin = DateTime.Now;
+                }
+            }
+            CambioEstado cambioEstado = new CambioEstado(DateTime.Now);
+            cambioEstado.Estado = estado;
+            cambioEstados.Add(cambioEstado);
+        }
+        public void validarInfoCliente()
+        {
+
         }
     }
 }

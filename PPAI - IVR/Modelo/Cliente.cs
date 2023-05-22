@@ -11,6 +11,7 @@ namespace PPAI___IVR.Modelo
         private int dni;
         private string nombreCompleto;
         private int nroCelular;
+        private InformacionCliente informacionCliente;
 
         /// <summary>
         /// Constructor de la clase actual
@@ -24,10 +25,29 @@ namespace PPAI___IVR.Modelo
             this.NombreCompleto = nombreCompleto;
             this.NroCelular = nroCelular;
         }
+        public Cliente()
+        {
+
+        }
         
         // Métodos set y get de la clase.
         public int Dni { get => dni; set => dni = value; }
         public string NombreCompleto { get => nombreCompleto; set => nombreCompleto = value; }
         public int NroCelular { get => nroCelular; set => nroCelular = value; }
+
+        public bool esCliente()
+        {
+            return false;
+        }
+        public bool esValidacion()
+        {
+            return false;
+        }
+        public bool esInfoCorrecta()
+        {
+            return false;
+        }
+
+
     }
 }

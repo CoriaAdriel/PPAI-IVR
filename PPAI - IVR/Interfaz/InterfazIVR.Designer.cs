@@ -34,11 +34,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(517, 324);
+            this.ForeColor = System.Drawing.Color.Cornsilk;
             this.Name = "InterfazIVR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "IVR";
+            this.TopMost = true;
+            this.Load += new System.EventHandler(this.InterfazIVR_Load);
             this.ResumeLayout(false);
 
         }

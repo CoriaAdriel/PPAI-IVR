@@ -10,6 +10,7 @@ namespace PPAI___IVR.Modelo
     {
         private string nombre;
         private int nroOrden;
+        private Validacion validacion;
 
         /// <summary>
         /// Constructor de la clase actual.
@@ -21,9 +22,21 @@ namespace PPAI___IVR.Modelo
             this.Nombre = nombre;
             this.NroOrden = nroOrden;
         }
-        
+        public SubOpcionLlamada()
+        {
+
+        }
         // Métodos set y get de la clase.
         public string Nombre { get => nombre; set => nombre = value; }
         public int NroOrden { get => nroOrden; set => nroOrden = value; }
+
+        public bool esNro()
+        {
+            return false;
+        }
+        public string getValidacion()
+        {
+            return validacion.Nombre;
+        }
     }
 }

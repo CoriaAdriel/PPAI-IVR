@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PPAI___IVR.Controlador;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,20 @@ namespace PPAI___IVR
 {
     public partial class InterfazIVR : Form
     {
+        private GestorOperador gestorOperador;
+
         public InterfazIVR()
         {
             InitializeComponent();
         }
+
+        public GestorOperador GestorOperador { get => gestorOperador; set => gestorOperador = value; }
+
+        private void InterfazIVR_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }

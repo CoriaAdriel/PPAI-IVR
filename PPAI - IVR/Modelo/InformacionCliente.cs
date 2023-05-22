@@ -18,8 +18,20 @@ namespace PPAI___IVR.Modelo
         {
             this.DatoAValidar = datoAValidar;
         }
+        public InformacionCliente()
+        {
 
+        }
         // Métodos set y get de la clase.
         public string DatoAValidar { get => datoAValidar; set => datoAValidar = value; }
+
+        public bool esInformacionCorrecta()
+        {
+            return false;
+        }
+        public bool esValidacion()
+        {
+            return false;
+        }
     }
 }

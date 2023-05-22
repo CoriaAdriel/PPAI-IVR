@@ -21,9 +21,17 @@ namespace PPAI___IVR.Modelo
             this.AudioMensajeValidacion = audioMensajeValidacion;
             this.Nombre = nombre;
         }
-        
+        public Validacion()
+        {
+
+        }
         // Métodos set y get de la clase.
         public string AudioMensajeValidacion { get => audioMensajeValidacion; set => audioMensajeValidacion = value; }
         public string Nombre { get => nombre; set => nombre = value; }
+
+        public string getMensaje()
+        {
+            return nombre;
+        }
     }
 }

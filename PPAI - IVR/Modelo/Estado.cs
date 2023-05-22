@@ -18,11 +18,24 @@ namespace PPAI___IVR.Modelo
         {
             this.nombre = nombre;
         }
+        public Estado()
+        {
+
+        }
         // Métodos set y get de la clase Estado.
         public string Nombre
         {
             get { return nombre; }
             set { nombre = value; }
+        }
+
+        private bool esFinalizada()
+        {
+            return false;
+        }
+        private bool esIniciada()
+        {
+            return false;
         }
     }
 }

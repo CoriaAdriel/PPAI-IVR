@@ -39,6 +39,7 @@
             this.Name = "InterfazOperador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Operador";
+            this.Load += new System.EventHandler(this.InterfazOperador_Load);
             this.ResumeLayout(false);
 
         }
